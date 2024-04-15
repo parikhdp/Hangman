@@ -1,170 +1,170 @@
 const wordList = [
     {
-        word: "Aurora",
+        word: "aurora",
         hint: "The dawn in the early morning."
     },
     {
-        word: "Bungalow",
+        word: "bungalow",
         hint: "	A type of house with a sloppy roof."
     },
     {
-        word: "Curiosity",
+        word: "curiosity",
         hint: "A strong desire to know or learn something."
     },
     {
-        word: "Demure",
+        word: "demure",
         hint: "Reserved, modest, shy."
     },
     {
-        word: "Effervescent",
+        word: "effervescent",
         hint: "Lively, full of energy, bubbly."
     },
     {
-        word: "Elixir",
+        word: "elixir",
         hint: "	A (magical) potion."
     },
     {
-        word: "Enigma",
+        word: "enigma",
         hint: "Something that is mysterious, puzzling, or difficult to understand."
     },
     {
-        word: "Epiphany",
+        word: "epiphany",
         hint: "A life-changing realization."
     },
     {
-        word: "Euphoria",
+        word: "euphoria",
         hint: "A state of extreme happiness."
     },
     {
-        word: "Fantasy",
+        word: "fantasy",
         hint: "A genre of imaginative fiction involving magic and supernatural elements."
     },
     {
-        word: "Idyllic",
+        word: "idyllic",
         hint: "Picturesque, beautiful, almost fairytale-like."
     },
     {
-        word: "Incandescent",
+        word: "incandescent",
         hint: "Emitting light as a result of being heated."
     },
     {
-        word: "Labyrinth",
+        word: "labyrinth",
         hint: "A complex set of passageways."
     },
     {
-        word: "Language",
+        word: "language",
         hint: "A system of communication consisting of words, gestures, and syntax."
     },
     {
-        word: "Lullaby",
+        word: "lullaby",
         hint: "A melody that mothers sing to their babies to get them to sleep."
     },
     {
-        word: "Luminescence",
+        word: "luminescence",
         hint: "Light produced by electric, chemical, or physiological means."
     },
     {
-        word: "Melancholy",
+        word: "melancholy",
         hint: "A feeling a pensive sadness."
     },
     {
-        word: "Moonlight",
+        word: "moonlight",
         hint: "The light from the moon."
     },
     {
-        word: "Nefarious",
+        word: "nefarious",
         hint: "Wicked, evil."
     },
     {
-        word: "Nostalgia",
+        word: "nostalgia",
         hint: "A sentimental longing or wistful affection for the past."
     },
     {
-        word: "Oasis",
+        word: "oasis",
         hint: "A fertile spot in a desert where water is found."
     },
     {
-        word: "Obfuscate",
+        word: "obfuscate",
         hint: "To confuse or bewilder someone; to make something unclear or difficult to understand."
     },
     {
-        word: "Oblivion",
+        word: "oblivion",
         hint: "A state of unawareness of what's going on around you."
     },
     {
-        word: "Onomatopoeia",
+        word: "onomatopoeia",
         hint: "Something that uses the sounds it makes to form its name."
     },
     {
-        word: "Paradox",
+        word: "paradox",
         hint: "A statement or situation that contradicts itself or defies intuition."
     },
     {
-        word: "Picturesque",
+        word: "picturesque",
         hint: "Visually pleasing, beautifully looking, for example a landscape."
     },
     {
-        word: "Quintessence",
+        word: "quintessence",
         hint: "The most perfect example."
     },
     {
-        word: "Rainbow",
+        word: "rainbow",
         hint: "An arch of colours in the sky."
     },
     {
-        word: "Renaissance",
+        word: "renaissance",
         hint: "The period between the 14th and 17th centuries."
     },
     {
-        word: "Scintilla",
+        word: "scintilla",
         hint: "A trace or spark of something."
     },
     {
-        word: "Serendipity",
+        word: "serendipity",
         hint: "A chain of events that occurs in a favorable way."
     },
     {
-        word: "Silhouette",
+        word: "silhouette",
         hint: "An outline of a figure."
     },
     {
-        word: "Solitude",
+        word: "solitude",
         hint: "A state of isolation or loneliness."
     },
     {
-        word: "Sunflower",
+        word: "sunflower",
         hint: "A tall plant with a large yellow flower head."
     },
     {
-        word: "Telescope",
+        word: "telescope",
         hint: "An optical instrument used to view distant objects in space."
     },
     {
-        word: "Tranquility",
+        word: "tranquility",
         hint: "Another word for peace."
     },
     {
-        word: "Umbrella",
+        word: "umbrella",
         hint: "The thing you hold to protect yourself from the rain."
     },
     {
-        word: "Unpredictable",
+        word: "unpredictable",
         hint: "Not able to be foreseen or known beforehand; uncertain."
     },
     {
-        word: "Vibrant",
+        word: "vibrant",
         hint: "Full of energy, brightness, and life."
     },  
     {
-        word: "Wanderlust",
+        word: "wanderlust",
         hint: "A strong desire to travel."
     },
     {
-        word: "Waterfall",
+        word: "waterfall",
         hint: "A cascade of water falling from a height."
     },
     {
-        word: "Zenith",
+        word: "zenith",
         hint: "The highest, most successful point of a situation."
     },    
 ];
