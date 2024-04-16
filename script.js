@@ -2,8 +2,9 @@ const hangmanImg= document.querySelector(".hangman-box img");
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".word-display");
 const guesses = document.querySelector(".guesses-text b");
+const gameModal = document.querySelector(".game-modal");
 
-let currentWord, count=0;
+let currentWord, count=0, correct= [];
 const max = 6;
 
 //get a random word displayed on screen
@@ -15,7 +16,14 @@ const getRandomWord = () =>
     document.querySelector(".hint-text b").innerText = hint;
     wordDisplay.innerHTML = word.split("").map(()=>'<li class="letter"></li>').join("");
 }
-
+//game over functionality 
+const gameOver = (isVictory) =>
+{
+    setTimeout(() => 
+    {
+        gameModal.classList.add("show");
+    },300);
+}
 //checking if clicked letter exists in the word or not
 const initGame = (button, clickedLetter) =>
 {
@@ -25,6 +33,7 @@ const initGame = (button, clickedLetter) =>
     {
         if(letter === clickedLetter)
         {
+            correct.push(letter);
             wordDisplay.querySelectorAll("li")[index].innerText = letter;
             wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
         }
@@ -37,6 +46,11 @@ const initGame = (button, clickedLetter) =>
     }
     button.disabled = true;
     guesses.innerText = `${count} / ${max}`;
+
+    if(count === max)
+      return gameOver(false);
+    if(correct.length === currentWord.legth)
+      return gameOver(true);    
 }
 
 //creating the keyboard
