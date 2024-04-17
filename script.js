@@ -4,7 +4,7 @@ const wordDisplay = document.querySelector(".word-display");
 const guesses = document.querySelector(".guesses-text b");
 const gameModal = document.querySelector(".game-modal");
 
-let currentWord, count=0, correct= [];
+let currentWord, correctLetters= [], count=0;
 const max = 6;
 
 //get a random word displayed on screen
@@ -21,6 +21,10 @@ const gameOver = (isVictory) =>
 {
     setTimeout(() => 
     {
+        const modalText = isVictory ? `You corectly guessed the word: ` : `The correct word was: `;
+        gameModal.querySelector(".img").src= `images/${isVictory ? `victory` : `lost`}.gif`;
+        gameModal.querySelector(".h4").innerText = `${isVictory ? `Congratulations!` : `Game Over`}`;
+        gameModal.querySelector(".img").innerHTML= `${modalText} <b>${currentWord}</b>`;
         gameModal.classList.add("show");
     },300);
 }
@@ -33,7 +37,7 @@ const initGame = (button, clickedLetter) =>
     {
         if(letter === clickedLetter)
         {
-            correct.push(letter);
+            correctLetters.push(letter);
             wordDisplay.querySelectorAll("li")[index].innerText = letter;
             wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
         }
@@ -49,7 +53,7 @@ const initGame = (button, clickedLetter) =>
 
     if(count === max)
       return gameOver(false);
-    if(correct.length === currentWord.legth)
+    if(correctLetters.length === currentWord.legth)
       return gameOver(true);    
 }
 
@@ -63,3 +67,4 @@ for (let i = 97; i < 122; i++)
 }
 
 getRandomWord();
+
